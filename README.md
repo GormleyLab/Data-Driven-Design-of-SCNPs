@@ -3,8 +3,7 @@ This repository contains data included in the article "Data Driven Design of Sin
 
 
 # REFERENCES
-The specific application, data, and machine learning models are described in 
-^Upadhya, R.; ^Tamasi, M.J.; Di Mare, E.; Murthy, N.S.; *Gormley, A.J (^ denotes equal contributions, * denotes corresponding authors), Chemrxiv, 2022.
+The specific application, data, and machine learning models are described in: Data Driven Design of Single Chain Polymer Nanoparticles by ^Upadhya, R.; ^Tamasi, M.J.; Di Mare, E.; Murthy, N.S.; *Gormley, A.J (^ denotes equal contributions, * denotes corresponding authors), Chemrxiv, 2022.
 
 
 # DIRECTORIES
