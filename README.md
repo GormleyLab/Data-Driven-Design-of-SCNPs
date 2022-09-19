@@ -19,7 +19,7 @@
 This repository contains all of the code and data included in the article "Data-Driven Design of Protein-Like Single-Chain Polymer Nanoparticles" published on Chemrxiv Sep 13th, 2022.
 
 ## Data
-The [data directory](https://github.com/GormleyLab/Data-Driven-Design-of-SCNPs/blob/main/Data/SCNP_DLS_SAXS_Data.csv) includes one .csv files that contain data regarding physical attributes of SCNPs captured using dynamic light scattering (DLS), small angle x-ray scattering (SAXS), and chemical descriptor calculations. This is the data utilized in the manuscript to train evidential regression models for SCNP property prediction.
+The [data directory](https://github.com/GormleyLab/Data-Driven-Design-of-SCNPs/blob/main/Data/SCNP_DLS_SAXS_Data.csv) includes one .csv files that contain data regarding physical attributes of SCNPs captured using dynamic light scattering (DLS), small angle x-ray scattering (SAXS), and chemical descriptor calculations. This is the data utilized in the manuscript to train [evidential regression models](https://github.com/aamini/evidential-deep-learning) for SCNP property prediction.
 
 ## System Requirements
 ### Hardware Requirements
@@ -41,13 +41,18 @@ numpy
 scikit-learn
 pandas
 keras
+evidential-deep-learning
+tensorflow
 ```
 ## Model Training Demo
-To train a model for SCNP prediction on the provided dataset, the following file can be run:
+The easiest way to utilize the code is to download and run the following file:
 
-`SCNP_demo.py`
+`scnp_demo.py`
 
-This will run X epochs of taining for a predefined evidential neural network and provide predictions on 20% of the original data held out. These results will be saved in a pickle file.
+This demo file will train a simple evidential neural network for the immediate prediction of SCNP porod exponents. The code sources the data from the our data folder and will run 50 epochs of training for a predefined evidential neural network on 80% of the total dataset. Then, after training it will predict the scaled porod exponents of the held out data, passing the results to a local `results.csv` file.
+
+This demo may be further expanded as we continue to update this reposiory.
+
   
 ## References
 The specific application, data, and machine learning models are described in: Data Driven Design of Single Chain Polymer Nanoparticles by ^Upadhya, R.; ^Tamasi, M.J.; Di Mare, E.; Murthy, N.S.; *Gormley, A.J (^ denotes equal contributions, * denotes corresponding authors), Chemrxiv, 2022.
