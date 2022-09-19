@@ -1,4 +1,4 @@
-from Losses import *
+from losses import *
 from data_preprocessing import *
 #from model_builder import *
 import evidential_deep_learning as edl
